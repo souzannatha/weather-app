@@ -1,0 +1,21 @@
+<div class="weather-app">
+  <header class="weather-header">
+    <h1 class="title">Previsão do Tempo</h1>
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Pesquise uma cidade..."
+      [(ngModel)]="city"
+    />
+    <button (click)="submitPromise()">Pesquisar</button>
+  </header>
+  <div class="weather-card" *ngIf="weatherView">
+    <h2 class="city-name">{{ weatherView.cityName }}</h2>
+    <p class="temperature">
+      <strong>Temperatura:</strong> {{ weatherView.temp }}°C
+    </p>
+    <p class="forecast">
+      <strong>Umidade:</strong> {{ weatherView.humidity }}%
+    </p>
+  </div>
+</div>

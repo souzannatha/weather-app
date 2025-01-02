@@ -1,0 +1,26 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+  <h2>Entre no clima tempo</h2>
+  <div class="form-group">
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="text"
+      id="email"
+      formControlName="email"
+      class="form-input"
+      placeholder="Digite seu email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password" class="form-label">Senha</label>
+    <input
+      type="password"
+      id="password"
+      formControlName="password"
+      class="form-input"
+      placeholder="Digite sua senha"
+    />
+  </div>
+  <a router>
+    <button type="submit" class="form-button">Entrar</button>
+  </a>
+</form>

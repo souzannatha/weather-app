@@ -1,0 +1,67 @@
+@import "../../../styles/variables.scss"; 
+
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $baseBlack;
+  padding: 20px;
+  height: 100vh;
+
+  .weather-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 2.5rem;
+      color: $white;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .search-input {
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid $neutral-600;
+      border-radius: 5px;
+      background-color: $neutral-500;
+      color: $white;
+      font-size: 1rem;
+      outline: none;
+
+      &:focus {
+        border-color: $red;
+        background-color: $neutral-900;
+      }
+    }
+  }
+
+  .weather-card {
+    background-color: $neutral-900;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+
+    .city-name {
+      font-size: 2rem;
+      color: $white;
+      margin-bottom: 10px;
+    }
+
+    .temperature {
+      font-size: 1.25rem;
+      color: $white;
+      margin-bottom: 8px;
+    }
+
+    .forecast {
+      font-size: 1.125rem;
+      color: $white
+    }
+  }
+}
